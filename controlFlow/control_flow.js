@@ -53,3 +53,21 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+
+// Practice Task
+
+let person = 'Enrolled Member';
+let access;
+
+if (person === 'Employee') {
+    access = 'Dietary Services'
+} else if (person === "Enrolled Member") {
+    access = 'Dietary Services and one-on-one interaction with a dietician'
+} else if (person === "Subscriber") {
+    access = "partial access to Dietary Services"
+} else if (person === 'Non-Subscriber') {
+    access = 'Please enroll or subscribe for facility access'
+}
+
+console.log(`You are a ${person} and have access to ${access}.`)
